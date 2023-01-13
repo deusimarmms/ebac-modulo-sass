@@ -1,0 +1,33 @@
+@import './variables';
+
+.bg-footer {
+    padding: $padding-content;
+    background-color: $bg-secondary;
+
+}
+.footer-link ul{    
+    display: flex;
+    justify-content: space-between;
+
+}
+.links-content{
+    flex-direction: column;
+}
+.links-content a{
+    text-decoration: none;
+}
+.btn-social li{
+    margin: 10px 0;
+    width: 50%;
+    background-color: $bg-primary;
+    text-align: center !important;
+    border-radius: 5px;
+    color: #fff;
+}
+.btn-social a{
+    color: #fff;
+    padding: 0 40px;
+}
+.btn-social a:hover{
+    color: #525050;
+}
