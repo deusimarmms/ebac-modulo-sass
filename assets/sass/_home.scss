@@ -1,0 +1,51 @@
+@import './variables';
+
+/* Maquinas slide container */
+.slide-container {
+    margin-top: $margin-section;
+
+}
+
+.text-col-slide-container p {
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+.slide-columns h1 {
+    color: $font-color-dark-strong;
+    font-size: $font-size-h1;
+}
+.carousel-item img{
+    border-radius: 10px;
+}
+
+/* Maquinas primarias */
+.bg-primary-machines {
+    margin-top: $margin-section;
+    padding: $padding-content 0;
+    background: rgba(183, 214, 96, 0.8)
+      
+}
+.bg-primary-machines h1{
+    font-size: $font-size-h1;
+}
+.card img{
+   max-height: 400px;
+}
+/* Botão call to action */
+.card-body .btn-call-to-action{
+    text-align: center !important;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Conheça a bralyx */
+.bg-meet-bralyx{
+    margin: $margin-section 0;
+}
+.bg-meet-bralyx h1{
+    font-size: $font-size-h1;
+}
+.container-meet-bralyx img{
+    padding: 0 20px;
+}
