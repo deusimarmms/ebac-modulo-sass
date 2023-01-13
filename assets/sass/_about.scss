@@ -1,0 +1,46 @@
+@import './variables';
+
+.bg-about-container {
+    padding: $padding-content 0;
+    background-color: $bg-primary;
+}
+
+.bg-highlight-container {
+    padding: $padding-content 0;
+}
+
+.hightlight-icons img {
+    padding: $padding-content ;
+    width: 180px;
+    margin: 0 auto;
+}
+
+.bg-timeline {
+    padding: $padding-content 0 0 0;
+}
+
+/* disable owl dot */
+.owl-dots {
+    display: none;
+}
+
+/* Location */
+.bg-location-container {
+     padding: $padding-content 0; 
+}
+
+.bg-instalations {
+    padding: $padding-content 0 !important;
+    background: rgb(183, 214, 96);
+    background: linear-gradient(180deg, rgba(183, 214, 96, 1) 50%, rgba(249, 45, 53, 1) 50%);
+}
+.bg-about-contact{
+    padding: $padding-content 0 !important;
+}
+.about-call-cotent{
+    padding: $padding-content 0 !important;
+}
+.about-call-cotent{
+    background-color: #efefef;
+    border-radius: 5px;
+}
