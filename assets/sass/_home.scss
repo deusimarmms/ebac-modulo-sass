@@ -1,8 +1,9 @@
 @import './variables';
+@import './mixins';
 
 /* Maquinas slide container */
 .slide-container {
-    margin-top: $margin-section;
+    @include m-section
 
 }
 
@@ -39,13 +40,3 @@
     display: block;
 }
 
-/* Conheça a bralyx */
-.bg-meet-bralyx{
-    margin: $margin-section 0;
-}
-.bg-meet-bralyx h1{
-    font-size: $font-size-h1;
-}
-.container-meet-bralyx img{
-    padding: 0 20px;
-}
