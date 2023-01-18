@@ -10,12 +10,18 @@
     justify-content: space-between;
 
 }
-.links-content{
+/* Estendendo a classe */
+%links-content{
     flex-direction: column;
 }
 .links-content a{
     text-decoration: none;
 }
+
+.btn-social{
+    @extend %links-content;
+}
+
 .btn-social li{
     margin: 10px 0;
     width: 50%;
@@ -27,6 +33,7 @@
 .btn-social a{
     color: #fff;
     padding: 0 40px;
+    text-decoration: none;
 }
 .btn-social a:hover{
     color: #525050;
