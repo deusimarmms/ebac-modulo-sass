@@ -1,12 +1,12 @@
 @import './variables';
 
 .bg-about-container {
-    padding: $padding-content 0;
+    @include p-content;
     background-color: $bg-primary;
 }
 
 .bg-highlight-container {
-    padding: $padding-content 0;
+    @include p-content;
 }
 
 .hightlight-icons img {
@@ -26,7 +26,7 @@
 
 /* Location */
 .bg-location-container {
-     padding: $padding-content 0; 
+     @include p-content; 
 }
 
 .bg-instalations {
