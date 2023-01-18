@@ -12,6 +12,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 * {
   box-sizing: border-box !important;
   font-family: "Montserrat", sans-serif;
@@ -79,6 +81,14 @@ table {
   border-spacing: 0;
 }
 
+/* Fonts */
+/* Backgrounds */
+/* Font-size */
+/* Margin */
+/* Padding */
+/* Espaçamento entre sections */
+/* Espaçamento interno */
+/* Botão call to action */
 /* 1024 */
 @media (max-width: 1024px) {
   .bg-footer .row {
@@ -205,7 +215,8 @@ table {
   justify-content: space-between;
 }
 
-.links-content {
+/* Estendendo a classe */
+.btn-social {
   flex-direction: column;
 }
 
@@ -225,6 +236,7 @@ table {
 .btn-social a {
   color: #fff;
   padding: 0 40px;
+  text-decoration: none;
 }
 
 .btn-social a:hover {
@@ -236,9 +248,17 @@ table {
 /* Font-size */
 /* Margin */
 /* Padding */
+/* Fonts */
+/* Backgrounds */
+/* Font-size */
+/* Margin */
+/* Padding */
+/* Espaçamento entre sections */
+/* Espaçamento interno */
+/* Botão call to action */
 /* Maquinas slide container */
 .slide-container {
-  margin-top: 40px;
+  margin: 40px;
 }
 
 .text-col-slide-container p {
@@ -275,19 +295,6 @@ table {
   text-align: center !important;
   margin: 0 auto;
   display: block;
-}
-
-/* Conheça a bralyx */
-.bg-meet-bralyx {
-  margin: 40px 0;
-}
-
-.bg-meet-bralyx h1 {
-  font-size: 26px;
-}
-
-.container-meet-bralyx img {
-  padding: 0 20px;
 }
 
 .btn-call-to-action {
