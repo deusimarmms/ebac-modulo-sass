@@ -1,31 +1,28 @@
-const gulp = require('gulp')
-const concat = require('gulp-concat')
-const cssmin = require('gulp-cssmin')
-const rename = require('gulp-rename')
-const uglify = require('gulp-uglify')
+
+
+import gulp from 'gulp';
+import rename from 'gulp-rename';
+import concat from 'gulp-concat';
+import uglify from 'gulp-uglify';
+import minifyimage from 'gulp-imagemin';
 
 
 
 
-/* Minificação de arquivos do vendor */
+/* Minificação de imagens */
+gulp.task('minifyImg', () => {
+    return gulp.src('src/img/**/*')
 
+        .pipe(minifyimage())
+        .pipe(gulp.dest('dist/img'))
+})
+/* Minificação de scripts */
 
-function tarefasCSS(cb) {
-    return gulp.src('./vendor/**/*.css')
-        .pipe(concat('libs.css'))
-        .pipe(cssmin())
-        .pipe(rename(rename({suffix: '.min'}))) /* libs.min.css */
-        .pipe(gulp.dest('./dist/css'))
-}
-function tarefasJS(cb) {
-    return gulp.src('./vendor/**/*.js')
-        .pipe(concat('libs.js'))
-        .pipe(uglify())
-        .pipe(rename(rename({suffix: '.min'}))) /* libs.min.js */
-        .pipe(gulp.dest('./dist/js'))
-}
+gulp.task('minifyJS',()=>{
+    return gulp.src('src/js/**/*')
+    .pipe(concat('libs.js'))
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'})) //altera o nome para libs.min.js
+    .pipe(gulp.dest('./dist/js'))    
+})
 
-
-
-exports.styles = tarefasCSS
-exports.scripts = tarefasJS
