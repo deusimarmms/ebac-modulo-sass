@@ -13,3 +13,6 @@ E RODAR O COMANDO NPM I OU NPM INSTALL.
 - tratamento de imagens
 -- ! Importante o arquivo principal do minificado do css foi criado atráves do Sass sass --watch  src/sass/main.scss src/css/main.css --style compressed pois toda alteração do projeto é feita
 via sass .!
+21/01/23
+- APLICANDO CORREÇÃO NO ARQUIVO GULPFILE.JS 
+- APLICANDO A METODOLOGIA BEM NO PROJETO

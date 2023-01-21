@@ -1,0 +1,39 @@
+@import './variables';
+
+.machine-container {
+    background-color: $bg-primary;
+    padding: $padding-content 0;
+
+    &__title {
+        color: $font-color-dark-strong;
+        font-size: $font-size-h1;
+        padding: $padding-content 0 0 0;
+    }
+
+    &__text {
+        padding-bottom: 20px;
+        line-height: 30px;
+
+    }
+
+    &__img {
+        width: 450px;
+        height: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+.products-container {
+    padding: $padding-content 0;
+}
+
+.glider-slide {
+    border: none !important;
+}
+
+.btn-enviar {
+    background-color: $bg-primary  !important;
+    border: none !important;
+}

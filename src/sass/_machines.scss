@@ -1,20 +1,21 @@
 @import 'variables';
 
-.bg-machines-headercontent{
+.machines-headercontent{
     background-color: $bg-primary;
     padding: $padding-content;
 }
-.bg-machines-headercontent h1{
+.machines-headercontent{
+&__title{
     font-size: $font-size-h1 !important;
-
 }
-.bg-machines-headercontent p{
+&__text{
     line-height: 40px;
-
+}  
 }
+
 
 /* Máquinas */
-.bg-machines{
+.machines-container-content{
     margin: $margin-section 0;
 }
 .btn-machines {

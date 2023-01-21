@@ -98,11 +98,11 @@ table {
     align-items: center !important;
   }
   /* Máquinas individuais */
-  .bg-machine-content .row {
+  .machine-container .row {
     flex-direction: column;
     align-items: center;
   }
-  .bg-machine-content .col {
+  .machine-container .col {
     flex-direction: column;
     align-items: center;
   }
@@ -120,7 +120,8 @@ table {
     flex-direction: column;
     align-items: center;
   }
-  .macines-card, .col-6 {
+  .macines-card,
+  .col-6 {
     width: 100% !important;
   }
   .img-machine-container img {
@@ -181,18 +182,12 @@ table {
     margin-bottom: 40px !important;
   }
   /* Maquina individual */
-  .img-machine-container img {
+  .machine-container__img {
     width: 320px !important;
     height: 320px !important;
   }
   .hightlight-icons {
     flex-direction: column !important;
-  }
-}
-@media (width: 320px) {
-  .img-machine-container .img {
-    width: 200px !important;
-    height: 200px !important;
   }
 }
 /* Fonts */
@@ -257,18 +252,17 @@ table {
 /* Espaçamento interno */
 /* Botão call to action */
 /* Maquinas slide container */
-.slide-container {
+.sideleft-container {
   margin: 40px;
 }
 
-.text-col-slide-container p {
-  padding-bottom: 20px;
-  line-height: 30px;
-}
-
-.slide-columns h1 {
+.sideleft__title {
   color: #333;
   font-size: 26px;
+}
+.sideleft__text {
+  padding-bottom: 20px;
+  line-height: 30px;
 }
 
 .carousel-item img {
@@ -276,14 +270,17 @@ table {
 }
 
 /* Maquinas primarias */
-.bg-primary-machines {
+.machines-container {
   margin-top: 40px;
   padding: 40px 0;
   background: rgba(183, 214, 96, 0.8);
 }
-
-.bg-primary-machines h1 {
+.machines-container__title {
   font-size: 26px;
+}
+
+.card-body__title-sm {
+  color: #D71921;
 }
 
 .card img {
@@ -315,13 +312,25 @@ table {
 /* Font-size */
 /* Margin */
 /* Padding */
-.bg-about-container {
+.about-container {
   padding: 40px 0;
   background-color: #b7d660;
 }
+.about-container__title {
+  color: #333;
+  font-size: 26px;
+}
+.about-container__text {
+  padding-bottom: 20px;
+  line-height: 30px;
+}
 
-.bg-highlight-container {
+.highlight-container {
   padding: 40px 0;
+}
+.highlight-container__title {
+  color: #333;
+  font-size: 26px;
 }
 
 .hightlight-icons img {
@@ -334,33 +343,33 @@ table {
   padding: 40px 0 0 0;
 }
 
-/* disable owl dot */
-.owl-dots {
-  display: none;
-}
-
-/* Location */
-.bg-location-container {
+/* Localização */
+.location-container {
   padding: 40px 0;
 }
+.location-container__title {
+  color: #333;
+  font-size: 26px;
+}
+.location-container__text {
+  padding-bottom: 20px;
+  line-height: 30px;
+}
 
-.bg-instalations {
+/* Instalações */
+.instalations-container {
   padding: 40px 0 !important;
   background: rgb(183, 214, 96);
   background: linear-gradient(180deg, rgb(183, 214, 96) 50%, rgb(249, 45, 53) 50%);
 }
 
-.bg-about-contact {
-  padding: 40px 0 !important;
+/* Contato */
+.contact-container {
+  padding: 40px 0;
 }
-
-.about-call-cotent {
-  padding: 40px 0 !important;
-}
-
-.about-call-cotent {
-  background-color: #efefef;
-  border-radius: 5px;
+.contact-container__title {
+  color: #333;
+  font-size: 26px;
 }
 
 /* Fonts */
@@ -368,21 +377,20 @@ table {
 /* Font-size */
 /* Margin */
 /* Padding */
-.bg-machines-headercontent {
+.machines-headercontent {
   background-color: #b7d660;
   padding: 40px;
 }
 
-.bg-machines-headercontent h1 {
+.machines-headercontent__title {
   font-size: 26px !important;
 }
-
-.bg-machines-headercontent p {
+.machines-headercontent__text {
   line-height: 40px;
 }
 
 /* Máquinas */
-.bg-machines {
+.machines-container-content {
   margin: 40px 0;
 }
 
@@ -396,22 +404,28 @@ table {
 /* Font-size */
 /* Margin */
 /* Padding */
-.bg-machine-content {
+.machine-container {
   background-color: #b7d660;
   padding: 40px 0;
 }
-
-.machine-img img {
-  width: 500px;
-  height: 500px;
+.machine-container__title {
+  color: #333;
+  font-size: 26px;
+  padding: 40px 0 0 0;
+}
+.machine-container__text {
+  padding-bottom: 20px;
+  line-height: 30px;
+}
+.machine-container__img {
+  width: 450px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
 }
 
-.bg-products {
+.products-container {
   padding: 40px 0;
-}
-
-.slide-products {
-  width: 350px !important;
 }
 
 .glider-slide {

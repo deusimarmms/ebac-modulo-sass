@@ -3,12 +3,17 @@
     "bootstrap": "^5.2.3",
     "glider-js": "^1.7.8",
     "gulp": "^4.0.2",
-    "jquery": "^3.6.3"
+    "gulp-cli": "^2.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-minify": "^3.1.0",
+    "jquery": "^3.6.3",
+    "owl.carousel": "^2.3.4"
   },
   "name": "ebac-modulo-sass",
   "description": "13/01/23\r PRIMEIRA PARTE DO PROJETO DE MODULO SASS DA ESCOLA EBAC",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,6 +32,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-rename": "^2.0.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.57.1"
   }
 }
