@@ -2,41 +2,54 @@
 @import './mixins';
 
 /* Maquinas slide container */
-.slide-container {
+.sideleft-container {
     @include m-section
+}
+
+.sideleft {
+    &__title {
+        color: $font-color-dark-strong;
+        font-size: $font-size-h1;
+
+    }
+
+    &__text {
+        padding-bottom: 20px;
+        line-height: 30px;
+
+    }
 
 }
 
-.text-col-slide-container p {
-    padding-bottom: 20px;
-    line-height: 30px;
-}
 
-.slide-columns h1 {
-    color: $font-color-dark-strong;
-    font-size: $font-size-h1;
-}
-.carousel-item img{
+.carousel-item img {
     border-radius: 10px;
 }
 
 /* Maquinas primarias */
-.bg-primary-machines {
+.machines-container {
     margin-top: $margin-section;
     padding: $padding-content 0;
-    background: rgba(183, 214, 96, 0.8)
-      
+    background: rgba(183, 214, 96, 0.8);
+
+    &__title {
+        font-size: $font-size-h1;
+    }
 }
-.bg-primary-machines h1{
-    font-size: $font-size-h1;
+
+.card-body {
+    &__title-sm {
+        color: #D71921;
+    }
 }
-.card img{
-   max-height: 400px;
+
+.card img {
+    max-height: 400px;
 }
+
 /* Botão call to action */
-.card-body .btn-call-to-action{
+.card-body .btn-call-to-action {
     text-align: center !important;
     margin: 0 auto;
     display: block;
 }
-
