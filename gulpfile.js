@@ -6,17 +6,15 @@ import concat from 'gulp-concat';
 import uglify from 'gulp-uglify';
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
+import imagemin from 'gulp-imagemin';
 const sass = gulpSass(dartSass);
-
-
-
-/* Minificação de imagens */
-gulp.task('minifyImg', () => {
-    return gulp.src('src/img/**/*')
-
-        .pipe(minifyimage())
+/* Minificando imagens */
+gulp.task('imgmin', () =>
+    gulp.src('src/img/*')
+        .pipe(imagemin())
         .pipe(gulp.dest('dist/img'))
-})
+);
+
 /* Minificação de scripts */
 
 gulp.task('minifyJS',()=>{
@@ -35,4 +33,6 @@ gulp.task('styles',()=>{
     .pipe(gulp.dest('./dist/css'))    /* SAIDA CSS */
 })
 
- 
+ /* Executar o comando gulp imgmin para minificar as imgs */
+ /* Executar o comando minifyJS para minificar o script */
+ /* Executar o comando gulp styles para pegar todos os arquivos scss e minificar criando 1 css unico e minificado */
