@@ -16,3 +16,10 @@ via sass .!
 21/01/23
 - APLICANDO CORREÇÃO NO ARQUIVO GULPFILE.JS 
 - APLICANDO A METODOLOGIA BEM NO PROJETO
+
+25/01/23
+
+rodar comandos para minificar os arquivos
+ /* Executar o comando gulp imgmin para minificar as imgs */
+ /* Executar o comando minifyJS para minificar o script */
+ /* Executar o comando gulp styles para pegar todos os arquivos scss e minificar criando 1 css unico e minificado */
