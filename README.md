@@ -23,3 +23,5 @@ rodar comandos para minificar os arquivos
  /* Executar o comando gulp imgmin para minificar as imgs */
  /* Executar o comando minifyJS para minificar o script */
  /* Executar o comando gulp styles para pegar todos os arquivos scss e minificar criando 1 css unico e minificado */
+  /* Aplicando o calc para ajustar a responsividade na pagina home do projeto */
+
